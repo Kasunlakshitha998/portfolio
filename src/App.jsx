@@ -1,22 +1,16 @@
-import React, { useState } from "react";
-
-
-import Contact from "./components/contact";
-import Project from "./components/project";
-import Skills from "./components/skills";
-import About from "./components/about";
-import Hero from "./components/hero";
-import Header from "./components/header";
+import React from "react";
+import Contact from "./pages/contact";
+import Project from "./pages/project";
+import Skills from "./pages/skills";
+import About from "./pages/about";
+import Hero from "./pages/hero";
+import Header from "./pages/header";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+
 
   return (
-    <div
-      className={
-        darkMode ? "dark bg-gray-900 text-gray-100" : "bg-white text-gray-900"
-      }
-    >
+    <>
       {/* Header Section */}
       <Header/>
 
@@ -34,7 +28,7 @@ function App() {
 
       {/* Contact Section */}
       <Contact />
-    </div>
+    </>
   );
 }
 
