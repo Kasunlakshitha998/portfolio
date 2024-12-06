@@ -53,7 +53,7 @@ function Contact() {
           <FaInstagram />
         </a>
         <a
-          href="https://twitter.com/KasunLakshitha"
+          href="https://facebook.com/KasunLakshitha"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-500 hover:text-orange-500 text-3xl transition-transform transform hover:scale-125"

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaDatabase, FaNodeJs, FaReact } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function Skills() {
   const skills = [
@@ -39,16 +40,25 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="px-6 py-12 md:px-20 dark:bg-gray-800 bg-gray-50"
+      className="px-6 py-12 md:pb-28 dark:bg-gray-900 bg-gray-50"
     >
-      <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500 mb-12 text-center">
+      <motion.h3
+        className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500 pb-10 text-center"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         My Skills
-      </h3>
+      </motion.h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
-          <div
+          <motion.div
             key={index}
-            className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
+            className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: index * 0.2 }}
+            whileHover={{ scale: 1.05 }}
           >
             {/* Skill Icon */}
             <div className="flex items-center mb-4 text-orange-500 text-3xl">
@@ -68,15 +78,17 @@ function Skills() {
 
             {/* Proficiency Bar */}
             <div className="relative h-3 w-full bg-gray-200 dark:bg-gray-700 rounded-full">
-              <div
+              <motion.div
                 className="absolute top-0 left-0 h-3 rounded-full bg-gradient-to-r from-orange-500 to-red-500"
-                style={{ width: `${skill.proficiency}%` }}
-              ></div>
+                initial={{ width: 0 }}
+                animate={{ width: `${skill.proficiency}%` }}
+                transition={{ duration: 1 }}
+              ></motion.div>
             </div>
             <p className="text-sm text-right mt-2 text-gray-600 dark:text-gray-400">
               Proficiency: {skill.proficiency}%
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
