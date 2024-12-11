@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import un from '../assets/uniwell.png'
+import un from "../assets/uniwell.png";
 import hs from "../assets/hs.png";
 
 function Project() {
@@ -31,26 +31,34 @@ function Project() {
   const projects = [
     {
       title: "UniWell App",
-      description: "React Native Expo App mental health app.",
-      image: un, // Replace with your image URL
+      description:
+        "UniWell is a mental health app built using React Native and Expo. It helps users track their mental well-being through various interactive features and real-time support options.",
+      technologies: ["React Native", "Expo", "Firebase", "Node.js"],
+      image: un,
       github: "https://github.com/your-unwell-repo",
     },
     {
       title: "E-Commerce Site",
-      description: "Online Mobile Store.",
-      image: hs , // Replace with your image URL
+      description:
+        "An online mobile store with features like product search, user authentication, and payment integration. Built with a focus on responsive design and efficient data handling.",
+      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      image: hs,
       github: "https://github.com/Kasunlakshitha998/Y2S2ITP",
     },
     {
       title: "Hospital Management System",
-      description: "MERN Stack Patient Management.",
-      image: hs, // Replace with your image URL
+      description:
+        "A MERN stack web application for managing patient records, doctor appointments, and hospital administration efficiently.",
+      technologies: ["MongoDB", "Express", "React", "Node.js"],
+      image: hs,
       github: "https://github.com/Kasunlakshitha998/CSSEY3S1",
     },
     {
       title: "Employee Management System",
-      description: "Java Web Application Manage the employees.",
-      image: "https://via.placeholder.com/300x200", // Replace with your image URL
+      description:
+        "A Java-based web application designed to streamline employee management, including attendance tracking and payroll processing.",
+      technologies: ["Java", "Spring Boot", "Hibernate", "MySQL"],
+      image: "https://via.placeholder.com/300x200",
       github: "https://github.com/your-employee-repo",
     },
   ];
@@ -89,9 +97,17 @@ function Project() {
                   <h4 className="text-lg font-bold text-orange-500 mb-2">
                     {project.title}
                   </h4>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">
                     {project.description}
                   </p>
+                  <h5 className="text-md font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                    Used Technologies:
+                  </h5>
+                  <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300">
+                    {project.technologies.map((tech, techIndex) => (
+                      <li key={techIndex}>{tech}</li>
+                    ))}
+                  </ul>
                 </div>
 
                 {/* Hover Overlay with GitHub Button */}

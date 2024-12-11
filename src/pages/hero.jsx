@@ -44,6 +44,37 @@ function Hero() {
         transition={{ duration: 0.5 }}
         className="flex flex-col md:h-[92vh] pb-10 md:flex-row justify-between px-6 md:pt-10 md:px-20 dark:bg-gray-900 bg-gray-50 transition-colors duration-300 overflow-hidden"
       >
+        {/* Image Section mobile */}
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            delay: 0.5,
+          }}
+          className="my-10 flex md:hidden justify-center items-center"
+        >
+          <motion.div whileHover={{ scale: 1.05 }} className="relative group">
+            <motion.img
+              initial={{ rotate: -5 }}
+              animate={{ rotate: 0 }}
+              transition={{ type: "spring", stiffness: 100 }}
+              className="rounded-full w-60 h-60 md:w-96 md:h-96 border-8 border-orange-500 shadow-2xl object-cover"
+              src={pic}
+              alt="Kasun Lakshitha"
+            />
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 1.5, type: "spring" }}
+              className="absolute -bottom-4 -right-4 bg-orange-500 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg"
+            >
+              👋
+            </motion.div>
+          </motion.div>
+        </motion.div>
+
         {/* Text Section */}
         <motion.div
           variants={containerVariants}
@@ -123,7 +154,7 @@ function Hero() {
             stiffness: 100,
             delay: 0.5,
           }}
-          className="mt-5 md:-mt-26 md:w-1/2 flex justify-center items-center"
+          className="hidden  mt-5 md:-mt-26 md:w-1/2 md:flex justify-center items-center"
         >
           <motion.div whileHover={{ scale: 1.05 }} className="relative group">
             <motion.img
