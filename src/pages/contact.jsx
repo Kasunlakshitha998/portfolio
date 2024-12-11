@@ -45,7 +45,7 @@ function Contact() {
           <FaLinkedin />
         </a>
         <a
-          href="https://www.instagram.com/kasun_lakshitha/"
+          href="https://www.instagram.com/k_a_s__s_a?igsh=eWNhbWk1bjN2bXM3&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-500 hover:text-orange-500 text-3xl transition-transform transform hover:scale-125"
@@ -53,7 +53,7 @@ function Contact() {
           <FaInstagram />
         </a>
         <a
-          href="https://facebook.com/KasunLakshitha"
+          href="https://www.facebook.com/share/15NGneMcXX/?mibextid=LQQJ4d"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-500 hover:text-orange-500 text-3xl transition-transform transform hover:scale-125"
@@ -63,7 +63,7 @@ function Contact() {
       </div>
 
       {/* Footer */}
-      <footer className="w-full py-4 text-center bg-gray-800 text-white mt-12">
+      <footer className="w-full py-4 text-center dark:bg-gray-800 dark:text-white mt-12 bg-white text-black">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Kasun Lakshitha. All Rights
           Reserved.

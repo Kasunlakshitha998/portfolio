@@ -87,7 +87,7 @@ function Header() {
       {/* Mobile Nav */}
       <div
         className={`fixed inset-0 z-40 bg-black bg-opacity-50 transition-opacity duration-300 ${
-          menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          menuOpen ? "opacity-100 visible mt-5" : "opacity-0 invisible"
         } md:hidden`}
         onClick={() => setMenuOpen(false)}
       >

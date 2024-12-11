@@ -33,7 +33,7 @@ function Project() {
       title: "UniWell App",
       description:
         "UniWell is a mental health app built using React Native and Expo. It helps users track their mental well-being through various interactive features and real-time support options.",
-      technologies: ["React Native", "Expo", "Firebase", "Node.js"],
+      technologies: ["React Native", "Expo", "Node.js", "MongoDB"],
       image: un,
       github: "https://github.com/your-unwell-repo",
     },
@@ -41,7 +41,7 @@ function Project() {
       title: "E-Commerce Site",
       description:
         "An online mobile store with features like product search, user authentication, and payment integration. Built with a focus on responsive design and efficient data handling.",
-      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      technologies: ["React", "Express", "Node.js", "MongoDB"],
       image: hs,
       github: "https://github.com/Kasunlakshitha998/Y2S2ITP",
     },
@@ -49,15 +49,15 @@ function Project() {
       title: "Hospital Management System",
       description:
         "A MERN stack web application for managing patient records, doctor appointments, and hospital administration efficiently.",
-      technologies: ["MongoDB", "Express", "React", "Node.js"],
+      technologies: ["React", "Express", "Node.js", "MongoDB"],
       image: hs,
       github: "https://github.com/Kasunlakshitha998/CSSEY3S1",
     },
     {
       title: "Employee Management System",
       description:
-        "A Java-based web application designed to streamline employee management, including attendance tracking and payroll processing.",
-      technologies: ["Java", "Spring Boot", "Hibernate", "MySQL"],
+        "A Java-based web application designed to streamline employee management, including schedule Management and payroll processing.",
+      technologies: ["Java", "MySQL"],
       image: "https://via.placeholder.com/300x200",
       github: "https://github.com/your-employee-repo",
     },
